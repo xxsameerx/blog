@@ -7,9 +7,9 @@
 }
 
 body {
+  background-color:gainsboro;
   font-family: "Montserrat", sans-serif;
-  margin: 0px auto;
-  max-width: 85%;
+  margin:auto;
   width: 100%;
 }
 
@@ -26,12 +26,15 @@ hr {
 /** container **/
 .container {
   padding: 0rem 1rem;
+  
+  
 }
 
 .container-center {
   max-width: 900px;
   width: 100%;
   margin: auto;
+ 
 }
 
 /** links **/
@@ -39,6 +42,7 @@ hr {
   box-sizing: border-box;
   text-decoration: none;
   padding: 0.5rem 1rem;
+
 }
 
 .link-primary {
@@ -79,16 +83,20 @@ hr {
   background-color: var(--primary-color);
   color: white;
   padding: 1rem;
-  border-bottom-left-radius: 1rem;
 }
 
 .navigation .nav-brand {
   font-weight: bold;
+
 }
 
 .nav-brand a {
+  font-size: 25px;
   text-decoration: none;
   color: black;
+  padding-left: 5rem;
+  padding-bottom:5rem;
+  
 }
 
 .navigation .nav-pills {
@@ -97,7 +105,7 @@ hr {
 }
 
 .navigation .link {
-  color: white;
+  color: black;
 }
 
 .navigation .link-active {
@@ -132,28 +140,39 @@ hr {
 /** sections **/
 
 .section {
-  padding: 2rem;
-  margin: 2rem 0;
+  padding: 1.5rem;
+  margin: 6rem 0;
   border-radius: 1rem;
   text-align: center;
 }
 
 .section h1 {
   text-align: center;
+ 
 }
 
 .ow {
   background-color: var(--off-white);
+  border: 1px outset #be185d;
+}
+.pow{
+  border: 1px dashed #be185d;
+}
+.adjust-width{
+  max-width: 80%;
 }
 
 /** footers **/
 
 .footer {
   background-color: var(--primary-color);
-  padding: 2rem 1rem;
+  padding: 1rem 0rem ;
   text-align: center;
-  color: white;
+  color:black;
   border-top-right-radius: 1rem;
+  border-top-left-radius:1rem ;
+  margin-top:1.4rem;
+ 
 }
 
 .footer .link {
@@ -184,6 +203,42 @@ hr {
 .showcase-list p {
   padding-bottom: 1rem;
 }
+.button{
+  background-color:white;
+  border: outset red;
+  color: yellow;
+  padding: 9px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 2px 2px;
+  border-radius: 8px;
+  transition:ease-out 0.3s;
+  
+}
+.button:hover{
+  cursor: pointer;
+  background-color:#be185d;
+  color: red;
+}
+.blog-btn{
+    background-color:var(--off-white);
+  color:black;
+  border: inset red;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 2px 2px;
+  border-radius: 8px;
+  transition:ease-out 0.3s;
+}
+.blog-btn:hover{
+  background-color:#be185d;
+  cursor: pointer;
+}
 
 /** blogs **/
 
@@ -209,4 +264,3 @@ hr {
   .link-primary {
     display: block;
   }
-
